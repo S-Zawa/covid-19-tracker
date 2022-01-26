@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import styles from "./App.module.css";
-import { Cards, CountryPicker } from "./components";
+import { Cards, CountryPicker, Chart } from "./components";
 import { fetchData } from "./api";
 import { Data } from "./api/types";
 import image from "./images/image.png";
@@ -28,6 +28,7 @@ function App() {
       <img className={styles.image} src={image} alt="COVID-19 Tracker" />
       <Cards data={data} />
       <CountryPicker handleCountryChange={onHandleCountryChange} />
+      <Chart data={data} />
     </div>
   );
 }

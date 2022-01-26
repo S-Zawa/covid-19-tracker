@@ -17,7 +17,7 @@ export const fetchData = async (country?: string): Promise<Data> => {
   }
 };
 
-export const fecthDailyData = async (): Promise<DailyData[]> => {
+export const fetchDailyData = async (): Promise<DailyData[]> => {
   try {
     const { data } = await axios.get<DailyData[]>(`${url}/daily`);
     return data;
