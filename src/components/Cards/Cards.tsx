@@ -11,7 +11,7 @@ import { Data } from "../../api/types";
 import CountUp from "react-countup";
 import cx from "classnames";
 
-const formatDate = (date?: Date): string => {
+export const formatDate = (date?: Date): string => {
   if (!date) {
     return "";
   }
